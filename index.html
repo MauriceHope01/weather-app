@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Previsioni Meteo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Previsioni Meteo</h1>
+    
+    <div class="search">
+      <input type="text" id="city-input" placeholder="Inserisci una città">
+      <button id="search-btn">Cerca</button>
+    </div>
+    
+    <div id="weather-info" class="weather-info">
+      <h2 id="city-name"></h2>
+      <div class="temperature">
+        <span id="temp"></span> °C
+      </div>
+      <div id="weather-description"></div>
+      <img id="weather-icon" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Weather_%28iOS%29.png" alt="Icona meteo">
+      <div id="humidity">Umidità: <span></span>%</div>
+    </div>
+
+    <h3>Città Recenti</h3>
+    <ul id="recent-cities"></ul>
+
+    <div id="loader" class="loader" style="display: none;">Caricamento...</div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
